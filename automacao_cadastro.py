@@ -18,9 +18,9 @@ time.sleep (1)
 # Digitar o site 
 pyautogui.write('https://dlp.hashtagtreinamentos.com/python/intensivao/login')
 pyautogui.press('enter')
-time.sleep(0.5)
+time.sleep(2)
 # Passo 2: Fazer login
-pyautogui.click(x=729, y=406)
+pyautogui.click(x=645, y=384)
 pyautogui.write('rskeila@outlook.com')
 time.sleep (0.5)
 pyautogui.press("tab")
@@ -38,7 +38,7 @@ print(tabela)
 # Passo 4: Cadastrar 1 produto
 for linha in tabela.index: #Para cada linha da minha tabela
     
-    pyautogui.click(x=734, y=286)
+    pyautogui.click(x=756, y=258)
 
     codigo = tabela.loc[linha, "codigo"]
     pyautogui.write(codigo)
